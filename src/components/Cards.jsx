@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { PhoneIcon } from '@heroicons/react/outline';
-import { ChipIcon } from '@heroicons/react/solid';
+
 import obec from '../assets/obec.jpeg'
 const Cards = () => {
   return (
