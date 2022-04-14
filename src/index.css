@@ -4,8 +4,8 @@
 
 
 @layer base{
-    li{
-        @apply p-4
+    Link{
+        @apply p-4 
     }
    
 }

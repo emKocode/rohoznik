@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import { Link } from "react-router-dom";
 import {MenuIcon, XIcon} from '@heroicons/react/outline'
 
 const Navbar = () => {
@@ -16,11 +16,13 @@ const Navbar = () => {
             <h1 className='text-3xl font-bold mx-[30px] sm:text-4xl text-text'>Rohoznik</h1>
           </div>
           <div className='flex'>
-          <ul className='hidden md:flex justify-between'>
-              <li>Domov</li>
-              <li>Samosprava</li>
-              <li>Zverejnovanie</li>
-              <li>Zivot v obci</li>
+          <ul className='hidden md:flex'>
+            
+              <Link className='p-4' to="/">Domov</Link>
+              <Link className='p-4' to="/expenses">Expenses</Link>
+              <Link className='p-4' to="/expenses">Expenses</Link>
+              <Link className='p-4' to="/expenses">Expenses</Link>
+              <Link className='p-4' to="/expenses">Expenses</Link>
             </ul>
           </div>
           <div className='md:hidden' onClick={handleClick}>
@@ -30,10 +32,11 @@ const Navbar = () => {
   
 
     <ul className={!nav ? 'hidden' : 'absolute bg-navbar w-full px-8 py-5'}>
-              <li className='border-b-2 border-text w-full'>Domov</li>
+              <li className='border-b-2 border-text w-full'>Obec</li>
               <li className='border-b-2 border-text w-full'>Samosprava</li>
               <li className='border-b-2 border-text w-full'>Zverejnovanie</li>
-              <li className='border-b-2 border-text w-full'>Zivot v obci</li>
+              <li className='border-b-2 border-text w-full'>Obecny urad</li>
+              <li className='border-b-2 border-text w-full'>Dokumenty</li>
     </ul>
 
 
